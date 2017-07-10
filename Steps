@@ -1,0 +1,4 @@
+gcc -c emd.c
+gcc -c example2.c
+gcc example2.o emd.o -o output2
+gcc wrapper.o emd.o -o wrapperOutput -lm 	//lm added to avoid math errors
